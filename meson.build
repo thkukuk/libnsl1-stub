@@ -21,7 +21,7 @@ libnsl_src = files(
   'src/xdr.c'
 )
 
-mapfile = 'src/libnsl.map'
+mapfile = 'src/libnsl-'+host_machine.cpu_family()+'.map'
 version_flag = '-Wl,--version-script,@0@/@1@'.format(meson.current_source_dir(), mapfile)
 
 lib = library(
