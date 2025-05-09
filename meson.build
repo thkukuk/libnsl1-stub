@@ -9,7 +9,7 @@ project(
 		  'b_pie=true',
 		  'warning_level=0',],
   license : 'LGPLv2+',
-  version : '1.0.0',
+  version : '1.1.0',
 )
 
 cc = meson.get_compiler('c')
